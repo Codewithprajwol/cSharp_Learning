@@ -5,16 +5,23 @@ namespace test.Models
 {
     class Person{
         private Home _home;
-        private School _school;
+        private IEducationalInstution _teaching;
         private  Hospital _hospital;
+
+        
+        public IEducationalInstution teaching{
+             set {
+                _teaching=value;
+             }
+        }
 
         public string name=string.Empty;
 
-        public Person()
+        public Person(Home home)
         { 
-            this._home=new Home();
-            this._school=new School();
-            this._hospital=new Hospital();
+            this._home=home;
+            // this._school=new School();
+            // this._hospital=new Hospital();
         }
         
         public void printName(){
@@ -27,10 +34,10 @@ namespace test.Models
          
          public void goSchool(){
             Console.WriteLine(" go to school");
-            _school.doschoolwork(this);
+            _teaching.doschoolwork(this);
          }
 
-         public void goHospital(){
+         public void goHospital(Hospital hos){
             Console.WriteLine("go to hospital");
             _hospital.doHospitalwork(this);
          }
