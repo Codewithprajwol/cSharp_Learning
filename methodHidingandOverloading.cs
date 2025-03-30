@@ -44,7 +44,7 @@
 
 // //here virtual and override is used
 
-// //REEMEBER 
+// //REMEMBER 
 // // for private memeber if you have created the public memember then use like Student { get; set;}
 
 

@@ -24,3 +24,29 @@
 // }// this is the use of indexer
 //     }
 // }
+
+
+// using System;
+// namespace indexing{
+//     class IndexerClass{
+//        private string [] names= new string [10];
+//        public string this [int i]{
+//         get {
+//             return names[i];
+//         }
+//         set{
+//             names[i]=value;
+//         }
+//        }
+//     }
+//     class Program{
+
+//         public static void Main(string [] args){
+//             IndexerClass ind=new IndexerClass();
+//             ind[0]="prajwol";
+//             ind[1]="shrestha";
+//             Console.WriteLine($"index is cute {ind[0]}"); 
+//         }
+        
+//     }
+// }

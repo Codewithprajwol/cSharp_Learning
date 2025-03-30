@@ -52,3 +52,33 @@
 //         }
 //     }
 // }
+
+
+// using System;
+// namespace abstractClass{
+//         abstract class Person{
+//             protected string name=string.Empty;
+//             protected int age;
+//             public abstract void printname();
+//         }
+
+//         class Prajwol:Person{
+//             public string  Name{ get{ return name;} set {name=value;}}
+//             public int Age {get{ return age;} set{age=value;}}
+
+//             public override void printname(){
+//                 Console.WriteLine($"name is {Name} and age is{Age}");
+//             }
+//         }
+//         class Program{
+//             static void Main(string [] args){
+//             Prajwol p = new Prajwol()
+//             {
+//                 Name = "prajwol",
+//                 Age = 12
+//             };
+//             p.printname();
+//             }
+            
+//         }
+// }
